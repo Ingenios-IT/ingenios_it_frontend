@@ -31,7 +31,7 @@ Vous pouvez alors constater que le site est lancé à l'adresse http://localhost
 
 ## Règles de developpement
 
-  - Développement en javascript (pas de TypeScript).
+  - Développement en javascript de preferences (type script).
   - Utiliser au maximum des functional components. (pas de class component).
   - Minimiser au maximum l'ajout de librairies externes.
   - Effectuer les requêttes via axios.
@@ -39,9 +39,29 @@ Vous pouvez alors constater que le site est lancé à l'adresse http://localhost
   - :warning: **INTERDICTION STRICTE D'UTILISER DES FRAMEWORS CSS TYPE BOOSTRAP**
   - Placer **tous** les fichier css, images et polices dans le dossier `assets`
   - **AUCUNE IMAGE > 1Mo**. Compressez vos images avant de les insérer.
+  - Un fichier css par page.
+
+  ## Nomenclature css
+
+  les seules classe non assignées à une page particulière sont main.css et font.css (qui seront importées depuis la page d'acceuil)
+
+  >### main.css :
+  > - containers
+  > - buttons
+  > - formulaires
+  > - élement réutilisés de nombreuses fois sur differentes pages.
+
+  >### font.css : 
+  > import de toutes les polices externes. (uniquement des polices libre de droit)
+
+  XX sont les deux première lettres de la page (ex : Index = IN , Project = PR ...). Si besoin de lever une ambiguïté, ajoutez une lettre.
+
+  les classes sont de la forme : XX-nom-de-classe
+  les id sont de la forme : XX-nom-de-id
 
   >### sources :
   > - Doc officielle react : https://fr.reactjs.org/
   > - Doc axios : https://axios-http.com/docs/intro
   > - Compresseur d'image en ligne : https://compressjpeg.com/fr/
+  > - React icons : https://react-icons.github.io/react-icons/
 

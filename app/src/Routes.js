@@ -1,5 +1,6 @@
 import { Route,Routes, BrowserRouter} from "react-router-dom";
 import App from './components/App'
+import Test from './containers/test'
 
 function ROUTES (){
   
@@ -7,6 +8,7 @@ function ROUTES (){
         <BrowserRouter>
           <Routes>
                 <Route exact path="" element={<App />} />
+                <Route exact path="/test" element={<Test />} />
           </Routes>
         </BrowserRouter>
       )
