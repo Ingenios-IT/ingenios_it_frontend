@@ -1,0 +1,46 @@
+@use "Main" as main;
+
+#NavigationBar-main{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 20px;
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+        img{
+            max-height: 75px;
+        }
+
+        a{
+            font-family: "rajdhani", serif;
+            color: main.$purple;
+        }
+}
+
+#NavigationBar-loginBtn{
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: main.$purple 2px solid;
+    border-radius: 10px;
+}
+
+#NavigationBar-centerLink{
+
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
